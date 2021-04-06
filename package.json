@@ -1,7 +1,7 @@
 {
   "name": "@paulvmoreau/ngx-scroll-to",
   "description": "Demo Application for @nicky-lenaers/ngx-scroll-to package.",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -60,7 +60,7 @@
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "conventional-changelog-cli": "^2.0.31",
-    "conventional-github-releaser": "^0.5.3",
+    "conventional-github-releaser": "^3.1.5",
     "copyfiles": "^2.2.0",
     "husky": "^4.2.5",
     "jasmine-core": "~3.5.0",
