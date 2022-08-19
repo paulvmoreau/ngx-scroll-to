@@ -1,7 +1,7 @@
 {
   "name": "@paulvmoreau/ngx-scroll-to",
   "description": "A simple Angular 4+ plugin enabling you to smooth scroll to any element on your page and enhance scroll-based features in your app. This is a fork from @nicky-lenaers' scroll to module that supports angular 10 and angular 11",
-  "version": "11.0.3",
+  "version": "11.0.4",
   "license": "MIT",
   "private": false,
   "keywords": [
@@ -59,17 +59,29 @@
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
-    "@angular/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
-    "tslib": "^2.0.0"
+    "@angular/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0"
   },
-  "main": "bundles/paulvmoreau-ngx-scroll-to.umd.js",
-  "module": "fesm5/paulvmoreau-ngx-scroll-to.js",
-  "es2015": "fesm2015/paulvmoreau-ngx-scroll-to.js",
-  "esm5": "esm5/paulvmoreau-ngx-scroll-to.js",
-  "esm2015": "esm2015/paulvmoreau-ngx-scroll-to.js",
-  "fesm5": "fesm5/paulvmoreau-ngx-scroll-to.js",
-  "fesm2015": "fesm2015/paulvmoreau-ngx-scroll-to.js",
-  "typings": "paulvmoreau-ngx-scroll-to.d.ts",
-  "metadata": "paulvmoreau-ngx-scroll-to.metadata.json",
-  "sideEffects": false
+  "module": "fesm2015/paulvmoreau-ngx-scroll-to.mjs",
+  "es2020": "fesm2020/paulvmoreau-ngx-scroll-to.mjs",
+  "esm2020": "esm2020/paulvmoreau-ngx-scroll-to.mjs",
+  "fesm2020": "fesm2020/paulvmoreau-ngx-scroll-to.mjs",
+  "fesm2015": "fesm2015/paulvmoreau-ngx-scroll-to.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/paulvmoreau-ngx-scroll-to.mjs",
+      "es2020": "./fesm2020/paulvmoreau-ngx-scroll-to.mjs",
+      "es2015": "./fesm2015/paulvmoreau-ngx-scroll-to.mjs",
+      "node": "./fesm2015/paulvmoreau-ngx-scroll-to.mjs",
+      "default": "./fesm2020/paulvmoreau-ngx-scroll-to.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
 }
