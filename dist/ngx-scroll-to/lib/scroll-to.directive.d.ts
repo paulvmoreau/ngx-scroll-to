@@ -3,6 +3,7 @@ import { ScrollToOffsetMap, ScrollToTarget } from './scroll-to-config.interface'
 import { ScrollToAnimationEasing } from './scroll-to-easing.interface';
 import { ScrollToEvent } from './scroll-to-event.interface';
 import { ScrollToService } from './scroll-to.service';
+import * as i0 from "@angular/core";
 export declare class ScrollToDirective implements AfterViewInit {
     private elementRef;
     private scrollToService;
@@ -23,4 +24,6 @@ export declare class ScrollToDirective implements AfterViewInit {
      * @returns void
      */
     ngAfterViewInit(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ScrollToDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<ScrollToDirective, "[ngxScrollTo]", never, { "ngxScrollTo": "ngxScrollTo"; "ngxScrollToEvent": "ngxScrollToEvent"; "ngxScrollToDuration": "ngxScrollToDuration"; "ngxScrollToEasing": "ngxScrollToEasing"; "ngxScrollToOffset": "ngxScrollToOffset"; "ngxScrollToOffsetMap": "ngxScrollToOffsetMap"; }, {}, never, never, false>;
 }

@@ -1,5 +1,6 @@
 import { ScrollToConfigOptions } from './scroll-to-config.interface';
 import { Observable } from 'rxjs';
+import * as i0 from "@angular/core";
 /**
  * The Scroll To Service handles starting, interrupting
  * and ending the actual Scroll Animation. It provides
@@ -137,4 +138,6 @@ export declare class ScrollToService {
      *                            Document Body Element
      */
     private isDocumentBody;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ScrollToService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<ScrollToService>;
 }
